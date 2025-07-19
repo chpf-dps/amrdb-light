@@ -2,22 +2,84 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BRB Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-theme="light">
+  <!-- Header & Navigation -->
   <header>
     <h1>Bordreisebüro Dashboard</h1>
   </header>
+  <nav>
+    <ul class="categories">
+      <!-- Tools -->
+      <li><i class="icon-trello"></i> Trello AMR BRB</li>
+      <li><i class="icon-tefra"></i> Tefra TOP</li>
+      <li><i class="icon-globus"></i> Globus Businfo</li>
+      <li><i class="icon-route"></i> Routenplanung</li>
+      <li><i class="icon-pixlr"></i> Pixlr</li>
+      <li><i class="icon-nextcloud"></i> AMR Nextcloud</li>
+      <!-- Chats -->
+      <li><i class="icon-chatgpt"></i> ChatGPT</li>
+      <li><i class="icon-mistral"></i> Mistral</li>
+      <li><i class="icon-perplexity"></i> Perplexity</li>
+      <!-- Reiseverwaltung -->
+      <li><i class="icon-phoenix"></i> Phoenix Reisen Homepage</li>
+      <li><i class="icon-meinereise"></i> Meine Reise</li>
+      <li><i class="icon-shiplogin"></i> Schiffslogin</li>
+      <!-- Cruise Info -->
+      <li><i class="icon-portal"></i> AMR Bordportal</li>
+      <li><i class="icon-map-marker"></i> Hier ist die Amera heute</li>
+      <!-- Info -->
+      <li><i class="icon-maps"></i> Google Maps</li>
+      <li><i class="icon-here"></i> Here Maps</li>
+      <li><i class="icon-timetable"></i> Cruise Timetables</li>
+      <li><i class="icon-portinfo"></i> Whats in Port</li>
+      <li><i class="icon-tips"></i> Kreuzfahrertipps</li>
+    </ul>
+  </nav>
+
+  <!-- Suchfeld mit Autocomplete -->
+  <section id="search-autocomplete">
+    <!-- Placeholder: Autocomplete-Suche -->
+    <input type="text" placeholder="Suche..." disabled />
+  </section>
+
+  <!-- Chat-Widget -->
+  <section id="chat-widget">
+    <!-- Placeholder: ChatGPT / Perplexity Widget -->
+    <div class="widget-placeholder">Chat-Widget hier</div>
+  </section>
+
+  <!-- MarineTraffic-Karte -->
+  <section id="marinetraffic-widget">
+    <!-- Placeholder: MarineTraffic-Karte -->
+    <div class="widget-placeholder">MarineTraffic Map</div>
+  </section>
+
+  <!-- Windy-Wetterwidget -->
+  <section id="windy-widget">
+    <!-- Placeholder: Windy Weather Widget -->
+    <div class="widget-placeholder">Windy Weather</div>
+  </section>
+
+  <!-- Hauptinhalt: Markdown-Integration -->
   <main>
-    <section id="info-box">Lade Inhalte...</section>
+    <div id="info-box">Initiale Markdown-Inhalte...</div>
   </main>
+
+  <!-- Footer -->
   <footer>
     <small>&copy; 2025 Bordreisebüro MS Amera</small>
+    <!-- Darkmode-Toggle-Platzhalter -->
+    <button id="toggle-darkmode">Dark Mode</button>
   </footer>
 
+  <!-- Externe Bibliothek: Markdown-Parser -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Eigenes Skript: Markdown laden und Platzhalter aktivieren -->
   <script src="script.js"></script>
 </body>
 </html>
